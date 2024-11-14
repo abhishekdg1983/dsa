@@ -1,5 +1,6 @@
 class NumArray:
 # https://leetcode.com/problems/range-sum-query-immutable/solutions/5689337/prefix-sum-approach/
+    #Time complexity: O(N) to calculate prefix-sum + O(1) per query. If there are k queries, O(N) + O(k). Space complexity: O(N)
     def __init__(self, nums: List[int]):
         self.prefix_sum = []
         current_sum = 0
